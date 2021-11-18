@@ -59,9 +59,7 @@ function Footer() {
             <section className="social-media">
                 <div className="social-media-wrap">
                     <div className="footer-logo">
-                        <Link className="social-logo">
-                            <i className="fab fa-typo3"></i>
-                        </Link>
+                            <i className="fab fa-accusoft social-logo"></i>
                     </div>
                     <small className="website-rights">
                         @2021

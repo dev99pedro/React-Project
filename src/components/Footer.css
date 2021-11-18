@@ -117,12 +117,13 @@ footer-link-items a:hover{
     justify-content: space-between;
     align-items: center;
     width: 240px;
+    margin-bottom: 16px;
 }
 
 .social-logo{
     color: #fff;
     justify-content: start;
-    margin-left: 20px;
+    margin-left: 5px;
     cursor: pointer;
     text-decoration: none;
     font-size: 2em;

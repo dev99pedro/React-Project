@@ -6,18 +6,26 @@ import Button from './Button'
 
 function Navbar(props) {
 
+    
   
 
     const[click, setClick]=useState(false)
 
     const handleClick= () =>{
         setClick(!click)
+        if(click===false){
+        let a= document.body.style.overflow='hidden'
+    } else{
+        let a= document.body.style.overflow='auto'
+    }     
     }
+
 
 
 
     const closeMobileMenu= () =>{
        setClick(false)
+       let b= document.body.style.overflow='auto'
     }
 
 
@@ -58,7 +66,7 @@ function Navbar(props) {
                     <i className={click ? 'fas fa-times': 'fas fa-bars'}></i>
                 </div>
 
-                <ul className ={click? 'nav-menu active' : 'nav-menu'}>
+                <ul  className ={click? 'nav-menu active ' : 'nav-menu'}>
                     <li onClick={closeMobileMenu} className="nav-item">
                         <Link to="/" className="nav-links">
                             Home
